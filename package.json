@@ -1,0 +1,27 @@
+{
+  "name": "ic_counter",
+  "version": "1.0.0",
+  "description": "simple counter app built on ic using Rust and Svelte",
+  "main": "index.js",
+  "scripts": {
+    "test": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wackyleo459/ic_counter.git"
+  },
+  "keywords": [
+    "Internet Computer",
+    "Canister",
+    "DFX",
+    "Rust",
+    "Svelte",
+    "Full-Stack"
+  ],
+  "author": "Sue Ann Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wackyleo459/ic_counter/issues"
+  },
+  "homepage": "https://github.com/wackyleo459/ic_counter#readme"
+}
