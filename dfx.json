@@ -1,0 +1,10 @@
+{
+  "canisters": {
+    "counter": {
+      "type": "custom",
+      "candid": "src/counter/counter.did",
+      "wasm": "target/wasm32-unknown-unknown/release/counter.wasm",
+      "build": "sh ./build.sh counter counter"
+    }
+  }
+}
