@@ -5,6 +5,19 @@
       "candid": "src/counter/counter.did",
       "wasm": "target/wasm32-unknown-unknown/release/counter.wasm",
       "build": "sh ./build.sh counter counter"
+    },
+    "showCounter_assets": {
+      "dependencies": [
+        "counter"
+      ],
+      "frontend": {
+        "entrypoint": "src/showCounter_assets/src/index.html"
+      },
+      "source": [
+        "src/showCounter_assets/assets",
+        "dist/showCounter_assets/"
+      ],
+      "type": "assets"
     }
   }
 }
