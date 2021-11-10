@@ -18648,35 +18648,109 @@ const { console: console_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.glob
 const file = "src/showCounter_assets/src/App.svelte";
 
 function create_fragment(ctx) {
-	let p;
+	let section0;
+	let p0;
+	let t0;
 	let t1;
-	let h3;
+	let t2;
+	let button0;
+	let t4;
+	let p1;
+	let t5;
+	let t6;
+	let t7;
+	let label;
+	let t9;
+	let input;
+	let t10;
+	let button1;
+	let t12;
+	let section1;
+	let mounted;
+	let dispose;
 
 	const block = {
 		c: function create() {
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			p.textContent = `${/*greeting*/ ctx[1]}`;
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			h3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h3");
-			h3.textContent = `Reset count is ${/*count*/ ctx[0]}`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(p, file, 15, 0, 499);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(h3, file, 16, 0, 517);
+			section0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("section");
+			p0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Current count is ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*currentCount*/ ctx[1]);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			button0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
+			button0.textContent = "Increment Count!";
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			p1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Local state count is ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*count*/ ctx[0]);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			label = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("label");
+			label.textContent = "Start from count:  ";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			button1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
+			button1.textContent = "reset count";
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			section1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("section");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr_dev)(p0, "id", "count");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(p0, file, 28, 2, 701);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(button0, file, 29, 2, 753);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(p1, file, 30, 2, 830);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr_dev)(label, "for", "name");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(label, file, 31, 2, 868);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr_dev)(input, "id", "resetCount");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr_dev)(input, "alt", "count");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr_dev)(input, "type", "text");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(input, file, 32, 2, 921);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(button1, file, 33, 2, 973);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(section0, file, 27, 0, 689);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr_dev)(section1, "id", "greeting");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_location)(section1, file, 35, 0, 1050);
 		},
 		l: function claim(nodes) {
 			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
 		},
 		m: function mount(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert_dev)(target, p, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert_dev)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert_dev)(target, h3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert_dev)(target, section0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, p0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(p0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(p0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, button0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, p1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(p1, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(p1, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, label);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_dev)(section0, button1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert_dev)(target, t12, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert_dev)(target, section1, anchor);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen_dev)(button0, "click", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.prevent_default)(/*incrementCount*/ ctx[2]), false, true, false),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen_dev)(button1, "click", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.prevent_default)(/*resetCount*/ ctx[3]), false, true, false)
+				];
+
+				mounted = true;
+			}
 		},
-		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		p: function update(ctx, [dirty]) {
+			if (dirty & /*currentCount*/ 2) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data_dev)(t1, /*currentCount*/ ctx[1]);
+			if (dirty & /*count*/ 1) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data_dev)(t6, /*count*/ ctx[0]);
+		},
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d: function destroy(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach_dev)(p);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach_dev)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach_dev)(h3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach_dev)(section0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach_dev)(t12);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach_dev)(section1);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
 	};
 
@@ -18694,44 +18768,67 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let { $$slots: slots = {}, $$scope } = $$props;
 	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.validate_slots)('App', slots, []);
+	let { count } = $$props;
+	_declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter.read().then(r => ($$invalidate(0, count = r), $$invalidate(1, currentCount = r)));
 
-	document.getElementById("clickMeBtn").addEventListener("click", async () => {
-		let name = document.getElementById("name").value.toString();
-		console.log(name);
-		const greeting = await _declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter.read();
-		document.getElementById("greeting").innerText = greeting;
-	});
+	function incrementCount() {
+		_declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter.inc().then(e => checkCount()).catch(err => console.log(err));
+		$$invalidate(0, count++, count);
+	}
 
-	const count = 2;
+	function resetCount() {
+		$$invalidate(4, reset = Number(document.getElementById("resetCount").value.toString()));
+		_declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter.write(reset).then(e => checkCount());
+		$$invalidate(0, count = reset);
+	}
 
-	let greeting0 = async () => {
-		await _declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter.read();
-	};
+	let { reset } = $$props;
+	let { currentCount } = $$props;
 
-	const greeting = JSON.stringify(greeting0());
-	const writable_props = [];
+	let checkCount = () => _declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter.read().then(result => {
+		$$invalidate(1, currentCount = result);
+	}).catch(err => console.log(err));
+
+	const writable_props = ['count', 'reset', 'currentCount'];
 
 	Object.keys($$props).forEach(key => {
 		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<App> was created with unknown prop '${key}'`);
 	});
 
-	$$self.$capture_state = () => ({ counter: _declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter, count, greeting0, greeting });
+	$$self.$$set = $$props => {
+		if ('count' in $$props) $$invalidate(0, count = $$props.count);
+		if ('reset' in $$props) $$invalidate(4, reset = $$props.reset);
+		if ('currentCount' in $$props) $$invalidate(1, currentCount = $$props.currentCount);
+	};
+
+	$$self.$capture_state = () => ({
+		count,
+		counter: _declarations_counter__WEBPACK_IMPORTED_MODULE_1__.counter,
+		incrementCount,
+		resetCount,
+		reset,
+		currentCount,
+		checkCount
+	});
 
 	$$self.$inject_state = $$props => {
-		if ('greeting0' in $$props) greeting0 = $$props.greeting0;
+		if ('count' in $$props) $$invalidate(0, count = $$props.count);
+		if ('reset' in $$props) $$invalidate(4, reset = $$props.reset);
+		if ('currentCount' in $$props) $$invalidate(1, currentCount = $$props.currentCount);
+		if ('checkCount' in $$props) checkCount = $$props.checkCount;
 	};
 
 	if ($$props && "$$inject" in $$props) {
 		$$self.$inject_state($$props.$$inject);
 	}
 
-	return [count, greeting];
+	return [count, currentCount, incrementCount, resetCount, reset];
 }
 
 class App extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponentDev {
 	constructor(options) {
 		super(options);
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { count: 0, greeting: 1 });
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { count: 0, reset: 4, currentCount: 1 });
 
 		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.dispatch_dev)("SvelteRegisterComponent", {
 			component: this,
@@ -18739,21 +18836,44 @@ class App extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponentDe
 			options,
 			id: create_fragment.name
 		});
+
+		const { ctx } = this.$$;
+		const props = options.props || {};
+
+		if (/*count*/ ctx[0] === undefined && !('count' in props)) {
+			console_1.warn("<App> was created without expected prop 'count'");
+		}
+
+		if (/*reset*/ ctx[4] === undefined && !('reset' in props)) {
+			console_1.warn("<App> was created without expected prop 'reset'");
+		}
+
+		if (/*currentCount*/ ctx[1] === undefined && !('currentCount' in props)) {
+			console_1.warn("<App> was created without expected prop 'currentCount'");
+		}
 	}
 
 	get count() {
-		return this.$$.ctx[0];
+		throw new Error("<App>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
 	}
 
 	set count(value) {
 		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
 	}
 
-	get greeting() {
-		return this.$$.ctx[1];
+	get reset() {
+		throw new Error("<App>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
 	}
 
-	set greeting(value) {
+	set reset(value) {
+		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+	}
+
+	get currentCount() {
+		throw new Error("<App>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+	}
+
+	set currentCount(value) {
 		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
 	}
 }
@@ -21323,9 +21443,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const app = new _App_svelte__WEBPACK_IMPORTED_MODULE_0__["default"]({
   target: document.body,
-  props: {
-    name: 'Mary'
-  }
 });
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (app);
