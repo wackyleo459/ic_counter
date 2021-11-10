@@ -78,13 +78,34 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.svelte$/, use: {
+        test: /\.svelte$/,
+        use: {
           loader: "svelte-loader",
           options: {
-            emitCss: true,
-            hotReload: true
+            compilerOptions: {
+              // NOTE Svelte's dev mode MUST be enabled for HMR to work
+              dev: true, // Default: false
+            },
+            // NOTE emitCss: true is currently not supported with HMR
+            // Enable it for production to output separate css file
+            emitCss: false, // Default: false
+            // Enable HMR only for dev mode
+            hotReload: true, // Default: false
+            // Extra HMR options, the defaults are completely fine
+            // You can safely omit hotOptions altogether
+            hotOptions: {
+              // Prevent preserving local component state
+              preserveLocalState: false,
+              // If this string appears anywhere in your component's code, then local
+              // state won't be preserved, even when noPreserveState is false
+              noPreserveStateKey: '@!hmr',
+              // Prevent doing a full reload on next HMR update after fatal error
+              noReload: false,
+              // Try to recover after runtime errors in component init
+              optimistic: false
+            }
           }
-        }
+        },
       },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] }
     ]
